@@ -7,6 +7,8 @@ public class ballshoot : MonoBehaviour {
     public GameObject projectile;
     public float speed = 20;
     private GameObject clone;
+    
+    
     // Update is called once per frame
     void Update()
     {
@@ -16,4 +18,6 @@ public class ballshoot : MonoBehaviour {
             clone.GetComponent<Rigidbody>().AddForce(clone.transform.forward * speed);
         }
     }
+    
+   
 }
